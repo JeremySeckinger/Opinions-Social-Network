@@ -19,16 +19,16 @@
         <% }) %>    
     <% } %>
 
-    <h1 class="text-center text-5xl text-purple-700">Login</h1>
+    <h1 class="mt-16 text-center text-5xl text-purple-700">Login</h1>
     <br>
     <h2 class="text-center text-purple-500">Continue sharing your opinions!</h2>
     <br>
 
-    <div class="flex mx-auto max-w-xl">
-        <form class="flex items-stretch p-4" action="/login" method="POST">
-            <input class="border" type="email" name="email" placeholder="Email">
-            <input class="border" type="password" name="password" placeholder="Password">
-            <input class="h-6 px-5 rounded-lg text-purple-100 bg-purple-700 hover:bg-purple-800" type="submit">
+    <div class="mx-auto max-w-xl">
+        <form class="flex flex-col items-center space-y-5" action="/login" method="POST">
+            <input class="border p-2 rounded-lg" type="email" name="email" placeholder="Email">
+            <input class="border p-2 rounded-lg" type="password" name="password" placeholder="Password">
+            <input class="px-8 py-2 rounded-lg text-purple-100 bg-purple-700 hover:bg-purple-800" type="submit">
         </form>    
     </div>
     
