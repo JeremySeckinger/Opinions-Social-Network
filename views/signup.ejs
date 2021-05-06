@@ -13,18 +13,18 @@
             <div class="alert alert-danger"><%= el.msg %></div>
         <% }) %>    
     <% } %>
-    <h1 class="text-center text-5xl text-purple-700">Signup</h1>
+    <h1 class="mt-16 text-center text-5xl text-purple-700">Signup</h1>
     <br>
     <h2 class="text-center text-purple-500">Start your free Opinion-ated account.</h2>
     <br>
 
-    <div class="flex mx-auto max-w-xl border">
-        <form class="flex-row" action="/signup" method="POST">
-            <input type="text" name="userName" placeholder="User Name">
-            <input type="email" name="email" placeholder="Email">
-            <input type="password" name="password" placeholder="Password">
-            <input type="password" name="confirmPassword" placeholder="Confirm Password">
-            <input class="h-6 px-5 rounded-lg text-purple-100 bg-purple-700 hover:bg-purple-800" type="submit">
+    <div class="mx-auto max-w-xl">
+        <form class="flex flex-col items-center space-y-5" action="/signup" method="POST">
+            <input class="border p-2 rounded-lg" type="text" name="userName" placeholder="User Name">
+            <input class="border p-2 rounded-lg" type="email" name="email" placeholder="Email">
+            <input class="border p-2 rounded-lg" type="password" name="password" placeholder="Password">
+            <input class="border p-2 rounded-lg" type="password" name="confirmPassword" placeholder="Confirm Password">
+            <input class="px-8 py-2 rounded-lg text-purple-100 bg-purple-700 hover:bg-purple-800" type="submit">
         </form>
     </div>
     
